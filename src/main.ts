@@ -4,7 +4,8 @@ import * as dotenv from "dotenv";
 import Moralis from "./config/moralis";
 import router from "./router";
 import "./custom-declarations";
-import store from '@/store'
+import store from "@/store";
+import "@/assets/tailwind.css";
 
 dotenv.config();
 
