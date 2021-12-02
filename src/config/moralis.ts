@@ -1,14 +1,7 @@
 import { App } from "vue";
 import * as Moralis from "moralis";
-import MoralisBaseType from "moralis/types";
 import Web3 from "web3";
 import { AppConfig } from ".";
-
-interface MoralisType extends MoralisBaseType {
-  AuthenticationOptions: {
-    signingMessage?: string;
-  };
-}
 
 Moralis.start({
   serverUrl: AppConfig.MORALIS_SERVER_URL,
@@ -26,4 +19,4 @@ export default {
     app.config.globalProperties.$web3 = web3;
   },
 };
-export { MoralisObject, MoralisType };
+export { MoralisObject };
